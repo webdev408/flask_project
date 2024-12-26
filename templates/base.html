@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Flask App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" />
+  </head>
+  <body>
+    <nav class="bg-gray-800 p-4">
+      <div class="container mx-auto">
+        <ul class="flex space-x-4">
+          <li><a href="/" class="text-white">Home</a></li>
+          <li><a href="/about" class="text-white">About</a></li>
+          <li><a href="/contact" class="text-white">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container mx-auto mt-4">{% block content %}{% endblock %}</div>
+    <footer class="text-purple-500 p-4 text-center my-10">&copy;2024 My Flask App</footer>
+  </body>
+</html>
